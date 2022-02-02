@@ -9,7 +9,7 @@ from utils import *
 from steps import *
 
 def main(robot: cozmo.robot.Robot):
-    #step_1(robot)
+    step_1(robot)
     step_2(robot)
     #step_3(robot)
     #step_4(robot)

@@ -19,6 +19,7 @@ def on_new_camera_image(evt, **kwargs):
         print("Cozmo is taking a photo")
         pilImage = kwargs['image'].raw_image
         global familyDirectory, shapeDirectory
+        print(kwargs)
         pilImage.save(f"photos/{familyDirectory}/{shapeDirectory}/photo-{kwargs['image'].image_number}.jpg", "JPEG")
 
 def take_photo(robot: cozmo.robot.Robot):
