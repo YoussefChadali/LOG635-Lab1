@@ -54,5 +54,3 @@ def step_13(robot: cozmo.robot.Robot):
 def step_14(robot: cozmo.robot.Robot):
     arrivee(robot)
 
-
-cozmo.run_program(step_8, use_viewer=True, force_viewer_on_top=True)

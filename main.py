@@ -23,4 +23,4 @@ def cozmo_program(robot: cozmo.robot.Robot):
     step_13(robot)
     step_14(robot)
     
-#cozmo.run_program(cozmo_program)
+cozmo.run_program(cozmo_program, use_viewer=True, force_viewer_on_top=True)
