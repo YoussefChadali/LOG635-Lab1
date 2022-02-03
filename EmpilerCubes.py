@@ -10,7 +10,7 @@ from cozmo.objects import CustomObject, CustomObjectMarkers, CustomObjectTypes, 
 import time 
 import asyncio
 
-def cozmo_program(robot: cozmo.robot.Robot):
+def empilerCubes(robot: cozmo.robot.Robot):
     # Essai d'émpiler 2 cubes
 
     # Regarde autour de soi, jusqu'à ce que Cozmo sache où sont au moins 2 cubes :
@@ -41,4 +41,4 @@ def cozmo_program(robot: cozmo.robot.Robot):
 
         print("Cozmo successfully stacked 2 blocks!")
 
-cozmo.run_program(cozmo_program)
+

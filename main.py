@@ -5,25 +5,22 @@ Il décrit les 15 arrêts réalisés par cozmo au cours de son épopée pour sau
 Il utilise les étapes définies dans le fichier steps.py
 '''
 import cozmo
-from utils import *
 from steps import *
 
-def main(robot: cozmo.robot.Robot):
+def cozmo_program(robot: cozmo.robot.Robot):  
     step_1(robot)
     step_2(robot)
-    #step_3(robot)
-    #step_4(robot)
-    #step_5(robot)
-    #step_6(robot)
-    #step_7(robot)
-    #step_8(robot)
-    #step_9(robot)
-    #step_10(robot)
-    #step_11(robot)
-    #ßstep_12(robot)
-    #step_13(robot)
-    #step_14(robot)
-    #step_15(robot)
-
-cozmo.run_program(main)
-
+    step_3(robot)
+    step_4(robot)
+    step_5(robot)
+    step_6(robot)
+    step_7(robot)
+    step_8(robot)
+    step_9(robot)
+    step_10(robot)
+    step_11(robot)
+    step_12(robot)
+    step_13(robot)
+    step_14(robot)
+    
+#cozmo.run_program(cozmo_program)

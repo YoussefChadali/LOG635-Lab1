@@ -9,7 +9,7 @@ import cozmo
 from cozmo.util import degrees
 import time
 
-def cozmo_program(robot: cozmo.robot.Robot):
+def desempilerCubes(robot: cozmo.robot.Robot):
     lookaround = robot.start_behavior(cozmo.behavior.BehaviorTypes.LookAroundInPlace)
     cubes = robot.world.wait_until_observe_num_objects(num=2, object_type=cozmo.objects.LightCube, timeout=60)
     lookaround.stop()
@@ -27,4 +27,4 @@ def cozmo_program(robot: cozmo.robot.Robot):
     while program_finished == False:
         time.sleep(0.1)
 
-cozmo.run_program(cozmo_program, use_viewer=True)
+

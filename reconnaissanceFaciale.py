@@ -25,10 +25,8 @@ def reconnaitreVisage(robot: cozmo.robot.Robot):
         print(face)
         if face.name is None:
             face.rename_face('humain')
-        robot.say_text(f"Bonjour {face.name}").wait_for_completed()
+        robot.say_text(f"Bonjour Robin").wait_for_completed()
         finished= True
 
     while finished == False:
         time.sleep(0.1)
-
-cozmo.run_program(reconnaitreVisage, use_viewer=True, force_viewer_on_top=True)
